@@ -81,7 +81,6 @@ ALL_OUTPUT_VALUES = (
     "ast",
     "bin",
     "bin-runtime",
-    "clone-bin",
     "devdoc",
     "interface",
     "opcodes",

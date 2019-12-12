@@ -7,16 +7,16 @@ from setuptools import (
 
 
 setup(
-    name='py-solc',
+    name='py-helios-solc',
     # *IMPORTANT*: Don't manually change the version here. Use the 'bumpversion' utility.
-    version='3.2.0',
-    description="""Python wrapper around the solc binary""",
+    version='3.2.1',
+    description="""Python wrapper around the helios solc binary""",
     long_description_markdown_filename='README.md',
-    author='Piper Merriam',
-    author_email='pipermerriam@gmail.com',
-    url='https://github.com/ethereum/py-solc',
+    author='Tommy Mckinnon',
+    author_email='tommy@heliosprotocol.io',
+    url='https://github.com/Helios-Protocol/py-helios-solc',
     include_package_data=True,
-    py_modules=['solc'],
+    py_modules=['helios_solc'],
     setup_requires=['setuptools-markdown'],
     python_requires='>=3.4, <4',
     install_requires=[
@@ -24,7 +24,7 @@ setup(
     ],
     license="MIT",
     zip_safe=False,
-    keywords='ethereum solidity solc',
+    keywords='ethereum helios protocol solidity solc',
     packages=find_packages(exclude=["tests", "tests.*"]),
     classifiers=[
         'Intended Audience :: Developers',
