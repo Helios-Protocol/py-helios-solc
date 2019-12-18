@@ -9,7 +9,7 @@ from setuptools import (
 setup(
     name='py-helios-solc',
     # *IMPORTANT*: Don't manually change the version here. Use the 'bumpversion' utility.
-    version='3.2.1',
+    version='3.2.2',
     description="""Python wrapper around the helios solc binary""",
     long_description_markdown_filename='README.md',
     author='Tommy Mckinnon',

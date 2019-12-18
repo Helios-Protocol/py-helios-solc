@@ -24,18 +24,15 @@ class SolcError(Exception):
         self.stdout_data = force_text_maybe(stdout_data, 'utf8')
 
     def __str__(self):
-        return textwrap.dedent(("""
-        {s.message}
-        > command: `{command}`
-        > return code: `{s.return_code}`
-        > stderr:
-        {s.stdout_data}
-        > stdout:
-        {s.stderr_data}
-        """).format(
-            s=self,
-            command=' '.join(self.command),
-        )).strip()
+        return "{} \ncommand: {} \nreturn code: {} \nstderr_data: {} \nstdout_data: {}".format(
+            self.message,
+            self.command,
+            self.return_code,
+            self.stderr_data,
+            self.stdout_data,
+        )
+
+
 
 
 class ContractsNotFound(SolcError):

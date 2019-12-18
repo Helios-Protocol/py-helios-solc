@@ -12,6 +12,7 @@ import zipfile
 
 
 V100_5_12 = 'v100.5.12'
+V100_5_15 = 'v100.5.15'
 
 
 LINUX = 'linux'
@@ -322,6 +323,7 @@ def install_from_static_linux(identifier):
 
 
 install_v100_5_12_linux = functools.partial(install_solc_from_static_linux, V100_5_12)
+install_v100_5_15_linux = functools.partial(install_solc_from_static_linux, V100_5_15)
 
 
 def install_from_source(identifier):
@@ -335,15 +337,18 @@ def install_from_source(identifier):
 
 
 install_v100_5_12_osx = functools.partial(install_from_source, V100_5_12)
+install_v100_5_15_osx = functools.partial(install_from_source, V100_5_15)
 
 
 INSTALL_FUNCTIONS = {
     LINUX: {
 
         V100_5_12: install_v100_5_12_linux,
+        V100_5_15: install_v100_5_15_linux,
     },
     OSX: {
         V100_5_12: install_v100_5_12_osx,
+        V100_5_15: install_v100_5_15_osx,
     }
 }
 
